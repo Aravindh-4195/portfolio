@@ -5,24 +5,46 @@ body{
 
 }
 nav{
-    display:flex;
-    justify-content: right;
+    display:grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
    border: 1px solid;
    border-color:white;
    height:40px;
    border-radius: 25px;
    margin:2%;
+   padding:3px;
 }
-
+.menu{
+    display:none;
+    text-align:center;
+}
+.menu:hover{
+    background-color: grey;
+}
 .profile-pic{
     height: 35vw;
     width:35vw;
 }
-.portfolio{
-    color:white;
+.grid-item{
+    text-align: center;
+}
+.grid-item1{
+    padding-top:0;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4  ;
+    border:none;
+    font-size: 5vh;
+    color:transparent;
+    -webkit-text-stroke:0.5px #fff;
     
 }
-
+.grid-item1::before{
+    background:grey;
+}
+.icon{
+    font-size:4vh;
+}
 a{  
     border:1px solid;
     padding:9px 2%;
@@ -31,7 +53,7 @@ a{
     text-decoration: none;
     color:white;
     cursor: pointer;
-  transition: 0.8s;
+  transition: 1s;
   position: relative;
   overflow: hidden;
 }
@@ -71,6 +93,26 @@ a::before{
 @media screen and (max-width: 500px) {
     .row{
         width:360px;
+    }
+    /* nav{
+        display:inline-grid;
+        grid-template-columns: auto;
+        height:350px;
+        width:150px;
+        padding:75px;
+    } */
+    .menu{
+        display:block;
+    }
+    .grid-item{
+        text-align: center;
+        padding-top:25px;
+    }
+    .grid-item1{
+        display:none;
+    }
+    .grid-item{
+        display:none;
     }
   }
 .row{
