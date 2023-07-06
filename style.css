@@ -10,7 +10,7 @@ nav{
     grid-template-columns: auto auto auto auto auto auto auto auto;
    border: 1px solid;
    border-color:white;
-   height:40px;
+   height:47px;
    border-radius: 25px;
    margin:2%;
    padding:3px;
@@ -44,6 +44,7 @@ nav{
 .grid-item1{
     padding-top:0;
     text-align: center;
+    text-decoration:none;
     grid-column-start: 1;
     grid-column-end: 4  ;
     border:none;
@@ -55,12 +56,13 @@ nav{
     background:grey;
 }
 .icon{
+    display:flex;
     font-size:4vh;
     vertical-align: baseline;
 }
-a{  
+.a{  
     border:1px solid;
-    padding:9px 2%;
+    padding:12px 2%;
     border-color:white;
     border-radius:20px;
     text-decoration: none;
@@ -70,10 +72,10 @@ a{
     position: relative;
     overflow: hidden;
 }
-a:hover{ 
+.a:hover{ 
     color:black;
 }
-a::before{
+.a::before{
     content: "";
     position: absolute;
     left: 0;
@@ -85,7 +87,7 @@ a::before{
     top: 0;
   border-radius: 0 0 50% 50%;
 }
-a:hover::before{
+.a:hover::before{
     height: 180%;
 }
 .close{
@@ -121,12 +123,15 @@ a:hover::before{
     background-color: black;
 }
 .column{
+    border-radius:25px;
     width:35vw;
     height:70vh;
     color:white;
-    display:flex;
-    justify-content:center;
     padding:2%;
+}
+.column.img{
+    display:flex;
+    justify-content: center;
 }
 .dev-name{
     font-size:3vw;
@@ -136,9 +141,21 @@ a:hover::before{
 .name-span{
     font-size:3vw;
 }
+
 .img{
-    height:40vw;
-    width:40vw;
+    height:36vw;
+    width:36vw;
+}
+.icons{
+    display:flex;
+    justify-content: space-around;
+}
+.icon2{
+    color:green;
+}
+.icon2:hover{
+    font-size:5vh;
+    color:white;
 }
 @media screen and (max-width:900px){
     .Home-container{
@@ -146,9 +163,10 @@ a:hover::before{
         justify-content: space-between;
     }
     .column{
+        display:flex;
         min-width:85vw;
-        align-items: center;
         min-height:85vh;
+        align-items: center;
     }
     .column.img{
         display:none;
@@ -158,6 +176,14 @@ a:hover::before{
     }
     .name-span{
         font-size: 4vw;
+    }
+    .icons{
+        position:absolute;
+        top:70vh;
+        left:2vw;
+    }
+    .icon2{
+        padding:7vw;
     }
 }
 
