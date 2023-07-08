@@ -10,8 +10,8 @@ nav{
     grid-template-columns: auto auto auto auto auto auto auto auto;
    border: 1px solid;
    border-color:white;
-   height:47px;
-   border-radius: 25px;
+   height:50px;
+   border-radius: 15px;
    margin:2%;
    padding:3px;
    position:-webkit-sticky;
@@ -31,15 +31,18 @@ nav{
 .menu{
     display:none;
     text-align:center;
+    height:50px;
     background-color:black;
-    border-radius:25px;
+    border-radius:15px;
 }
 .menu:hover{
     background-color: grey;
 }
 
 .grid-item{
-    text-align: center;
+    display:flex;
+    height:25px;
+    width:auto;
 }
 .grid-item1{
     padding-top:0;
@@ -64,13 +67,16 @@ nav{
     border:1px solid;
     padding:12px 2%;
     border-color:white;
-    border-radius:20px;
+    border-radius:15px;
     text-decoration: none;
     color:white;
     cursor: pointer;
     transition: 1s;
     position: relative;
     overflow: hidden;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 .a:hover{ 
     color:black;
@@ -151,7 +157,11 @@ nav{
     justify-content: space-around;
 }
 .icon2{
+    border:none;
     color:green;
+}
+.mail:active{
+    text-decoration:none;
 }
 .icon2:hover{
     font-size:5vh;
@@ -184,6 +194,7 @@ nav{
     }
     .icon2{
         padding:7vw;
+        border-radius:15px;
     }
 }
 
