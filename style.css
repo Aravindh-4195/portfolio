@@ -157,11 +157,7 @@ nav{
     justify-content: space-around;
 }
 .icon2{
-    border:none;
-    color:green;
-}
-.mail:active{
-    text-decoration:none;
+    color:white;
 }
 .icon2:hover{
     font-size:5vh;
@@ -195,6 +191,9 @@ nav{
     .icon2{
         padding:7vw;
         border-radius:15px;
+    }
+    .icons:hover{
+        font-size:auto;
     }
 }
 
