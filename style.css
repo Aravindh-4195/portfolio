@@ -21,7 +21,7 @@ nav{
 }
 .mini-nav{
     background-color: rgb(0 0 0 / 75%);
-    position:absolute;
+    position:sticky;
     display:inline-grid;
         grid-template-columns: auto;
         height:350px;
