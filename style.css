@@ -125,7 +125,7 @@ nav{
     display:flex;
     align-items: center;
     justify-content: space-around;
-    height: 78vh;
+    height: 90vh;
     background-color: black;
 }
 .column{
@@ -153,6 +153,7 @@ nav{
     width:36vw;
 }
 .icons{
+    margin:12% auto;
     display:flex;
     justify-content: space-around;
 }
@@ -184,6 +185,7 @@ nav{
         font-size: 4vw;
     }
     .icons{
+        margin:auto;
         position:absolute;
         top:70vh;
         left:2vw;
@@ -198,3 +200,97 @@ nav{
 }
 
 /* Home-section ends */
+/* middle container */
+
+/* about  */
+*{
+    margin:0;
+}
+.about{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+    background-color: white;
+}
+.profile-pic{
+    width:400px;
+    height:400px;
+}
+.about-col{
+    margin:5% 2%;
+}
+.about-para{
+    width:60vw;
+}
+@media screen  and (max-width:1200px){
+    .about{
+        flex-flow:column;
+    }
+    .profile-pic{
+        width:250px;
+        height:250px;
+    }
+}
+/* head-container ends */
+
+/* middle container */
+
+/* about  */
+*{
+    margin:0;
+}
+span{
+    font-weight: bold;
+}
+.about{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+}
+.profile-pic{
+    width:400px;
+    height:400px;
+}
+.about-col{
+    margin:5% 2%;
+}
+.intro{
+    font-family:sans-serif;
+    font-size:5vw;
+    color:transparent;
+    -webkit-text-stroke:2px green;
+    margin:5% 0;
+}
+.about-para{
+    font-size: 1.3rem;
+    width:50vw;
+    font-family: 'Merriweather', serif;
+    color: #556a66;
+    line-height: 2rem;
+}
+@media screen  and (max-width:1200px){
+    .about{
+        flex-flow:column;
+        justify-content: flex-start;
+    }
+    .profile-pic{
+        padding:20px;
+        width:80vw;
+        height: 80vw;
+    }
+    .about-col{
+        margin:2% 1%;
+    }
+    .about-para{
+        line-height: 1.5rem;
+        width:70vw;
+        font-size:1rem;
+    }
+    .intro{
+        font-size: 12vw;
+        -webkit-text-stroke:1px green;
+    }
+}
+/* about tab ends */
