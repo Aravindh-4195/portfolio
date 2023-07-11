@@ -6,40 +6,134 @@
     <title>Aravindh Mareedu</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-    <script src='main.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/7d2a1f3d58.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     
 </head>
 <body>
-    
-    <nav class="grid">
-        <a href="" class="menu"><i class="fa-solid fa-bars" style="color: #fafcff;"></i></a>
-        <a href="" class="grid-item1"><i class="fa-solid fa-code icon"  style="color: #fff;"></i>  ARAVINDH</a>
-        <a href="" class="grid-item">Home</a>
-        <a href="" class="grid-item">About</a>
-        <a href="" class="grid-item">Intrests</a>
-        <a href="" class="grid-item">About</a>
-        <a href="" class="grid-item">Intrests</a>
+    <div class="nothing" id="nothing">
+    <nav id="grid">
+        <button class="menu"><i class="fa-solid fa-bars" style="color: #fafcff;"></i></button>
+        <button class="close"><i class="fa-regular fa-circle-xmark" style="color: #fff;"></i></button>
+        <a href="" class="grid-item1 "><i class="fa-solid fa-code fa-flip icon"  style="color: #fff;"></i>  ARAVINDH</a>
+        <a href="#Home" class="grid-item a">Home</a>
+        <a href="#about" class="grid-item a">About</a>
+        <a href="#intrests" class="grid-item a">Intrests</a>
+        <a href="#education" class="grid-item a">education</a>
+        <a href="#skills" class="grid-item a">skills</a>
        </nav>
-       <div class="Home-section">
-        <div class="row">
-            <h1 class="dev-name"><span class="name-span">I'M </span><br>ARAVINDH MAREEDU</h1>
-            <br>
-            <p>I'm <span class="auto-type"></span></p>
-            <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-            <script>
-                var typed= new Typed(".auto-type",{
-                    strings: ["coding", "sleeping","Eating"],
-                    typeSpeed:150,
-                    backSpeed: 150,
-                    loop: true
-                })
-            </script>
+    </div>
+       <script src="index.js"></script>
+       <div class="Home-container" id="Home">
+        <div class="column dev-name">
+            <h1><span class="name-span">I'M </span><br>ARAVINDH MAREEDU<hr></h1>
+            <div class="icons"  >
+                <a href="https://www.linkedin.com/in/mareedu-aravindh-b54b13227/" class="icon2"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:1mareeduaravindh1@gmail.com" class="icon2 mail"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://github.com/Aravindh-4195" class="icon2"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/mareeduaravindh/" class="icon2"><i class="fa-brands fa-instagram"></i></a>
+            </div>
         </div>
-        <div class="row">
-            <img src="images/aravindh.png" class="profile-pic">
+        <div class="column img">
+            <img src="images/aravindh.png">
         </div>
     </div>
-       
-   
+    <hr class="hr">
+    <div class="middle-container">
+        <div class="about" id="about">
+            <div class="about-col">
+                <img  class="profile-pic" src="images/aravindh.jpg" alt="profile-pic"> 
+            </div>
+            <div class="about-col">
+                <h1 class="intro">Who Am I?</h1>
+                <p class="about-para">I'm <span>Aravindh Mareedu </span> a <span>Web Developer</span> from <span>National Institute of Technology, Andhra Pradesh</span> pursuing B.Tech 3rd year in <span>Computer Science and Engineering.</span> </p>
+            </div>
+        </div>
+
+    <hr class="hr">
+                                <!-- intrests -->
+            <div class="intrests" id="intrests">
+                <div class="heading two"><span>Skills</span></div>
+                <div class="intrest-col">
+                    <img  class="intrest-img" src="images/webdev.jpg" alt="web-dev">
+                    <h1 class="intrest-name">Web Development</h1>
+                    <script src="index.js"></script>
+                </div>
+                <div class="intrest-col">
+                    <img  class="intrest-img" src="images/competative.jpg" alt="Competative-Programming">
+                    <h1 class="intrest-name">Web Development</h1>
+                </div>
+                <div class="intrest-col">
+                    <img  class="intrest-img" src="images/app-dev.jpg" alt="web-dev">
+                </div>
+                <div class="intrest-col">
+                    <img  class="intrest-img" src="images/ml.jpg" alt="web-dev">
+                </div>
+                <div class="intrest-col">
+                    <img  class="intrest-img" src="images/ai.jpg" alt="web-dev">
+                </div>
+                <div class="intrest-col">
+                    <img  class="intrest-img" src="images/computer-networking.jpg" alt="web-dev">
+                </div>
+            </div>
+            <hr class="hr">
+                            <!-- Eduction -->
+                            <div class="education" id="education">
+                                <div class="heading one"><span>education</span></div>
+                                <div class="education-col">
+                                    <img src="images/nit-logo.jpg" alt="nit-logo" class="edu-img">
+                                    <h1 class="edu-name">National Institute of Technology Andhra Pradesh</h1>
+                                </div>
+                                <div class="education-col">
+                                    <img src="images/edu-2.jpg" alt="nit-logo" class="edu-img">
+                                    <h1 class="edu-name">P.V.K Rao Memorial School <br>Kotthuru</h1>
+                                </div>
+                                <div class="education-col">
+                                    <img src="images/sasi-logo.png" alt="nit-logo" class="edu-img">
+                                    <h1 class="edu-name">Sasi Junior College <br>Velivennu</h1>
+                                </div>
+                            </div>
+                            <hr class="hr">
+                                <!-- skills -->
+            <div class="skills" id="skills">
+                <div class="heading two"><span>Skills</span></div>
+                <div class="skills-row">
+                    <i class="fa-brands fa-html5 skill-icon" style="color: #e83b3b;"></i>
+                    HTML
+                </div>
+                <div class="skills-row">
+                    <i class="fa-brands fa-css3-alt skill-icon" style="color: #005eff;"></i>
+                    CSS
+                </div>
+                <div class="skills-row">
+                    <i class="fa-brands fa-square-js skill-icon" style="color: #dffc03;"></i>
+                    JAVASCRIPT
+                </div>
+                <div class="skills-row">
+                    <i class="fa-solid fa-moon skill-icon" style="color: #2c56a0;"></i>
+                    JQUERY
+                </div>
+                <div class="skills-row">
+                    <i class="fa-brands fa-php skill-icon" style="color: #494f5a;"></i>
+                    PHP
+                </div>
+                <div class="skills-row">
+                    <i class="fa-solid fa-database skill-icon" style="color: #0351d8;"></i>
+                    MYSQL
+                </div>
+                <div class="skills-row">
+                    <i class="fa-brands fa-python skill-icon" style="color: #fac400;"></i>
+                    PYTHON
+                </div>
+                <div class="skills-row">
+                    <i class="fa-brands fa-bootstrap skill-icon" style="color: #7605ff;"></i>
+                    BOOTSTRAP
+                </div>
+            </div>
+            <hr class="hr">
+        </div>
 </body>
 </html>
