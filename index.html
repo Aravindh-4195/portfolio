@@ -11,19 +11,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    
 </head>
 <body>
     <div class="nothing" id="nothing">
     <nav id="grid">
         <button class="menu"><i class="fa-solid fa-bars" style="color: #fafcff;"></i></button>
         <button class="close"><i class="fa-regular fa-circle-xmark" style="color: #fff;"></i></button>
-        <a href="" class="grid-item1 "><i class="fa-solid fa-code fa-flip icon"  style="color: #fff;"></i>  ARAVINDH</a>
-        <a href="#Home" class="grid-item a">Home</a>
-        <a href="#about" class="grid-item a">About</a>
-        <a href="#intrests" class="grid-item a">Intrests</a>
-        <a href="#education" class="grid-item a">education</a>
-        <a href="#skills" class="grid-item a">skills</a>
+        <a href="" class="grid-item1 "><i class="fa-solid fa-code fa-flip icon1"  style="color: #fff;"></i>  ARAVINDH</a>
+        <a href="#Home" class="grid-item a"><i class="fa-solid fa-house icon1"></i>Home</a>
+        <a href="#about" class="grid-item a"><div id="about-icon"><i class="fa-solid fa-info icon1 " ></i></div>About</a>
+        <!-- <a href="#intrests" class="grid-item a">Intrests</a> -->
+        <a href="#education" class="grid-item a"><i class="fa-solid fa-user-graduate icon1"></i>Education</a>
+        <a href="#Experience" class="grid-item a"><i class="fa-solid fa-suitcase icon1" ></i>Experience</a>
+        <a href="#Certificates" class="grid-item a"><i class="fa-solid fa-certificate icon1"></i>CertificatedIn</a>
+        <a href="#skills" class="grid-item a"><i class="fa-solid fa-gears icon1"></i>Skills</a>
+        <a href="#Skills" class="grid-item a"><i class="fa-solid fa-diagram-project icon1"></i>Projects</a>
+
        </nav>
     </div>
        <script src="index.js"></script>
@@ -31,10 +34,10 @@
         <div class="column dev-name">
             <h1><span class="name-span">I'M </span><br>ARAVINDH MAREEDU<hr></h1>
             <div class="icons"  >
-                <a href="https://www.linkedin.com/in/mareedu-aravindh-b54b13227/" class="icon2"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="mailto:1mareeduaravindh1@gmail.com" class="icon2 mail"><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://github.com/Aravindh-4195" class="icon2"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.instagram.com/mareeduaravindh/" class="icon2"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/mareedu-aravindh-b54b13227/" class="icon2" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:1mareeduaravindh1@gmail.com" class="icon2 mail"><i class="fa-solid fa-envelope" target="_blank"></i></a>
+                <a href="https://github.com/Aravindh-4195" class="icon2"><i class="fa-brands fa-github" target="_blank"></i></a>
+                <a href="https://www.instagram.com/mareeduaravindh/" class="icon2"><i class="fa-brands fa-instagram" target="_blank"></i></a>
             </div>
         </div>
         <div class="column img">
@@ -54,13 +57,13 @@
         </div>
 
     <hr class="hr">
-                                <!-- intrests -->
+                                <!-- intrests
             <div class="intrests" id="intrests">
-                <div class="heading two"><span>Skills</span></div>
                 <div class="intrest-col">
                     <img  class="intrest-img" src="images/webdev.jpg" alt="web-dev">
-                    <h1 class="intrest-name">Web Development</h1>
-                    <script src="index.js"></script>
+                    <div class="intrest-name">
+                        <h1>Web Development</h1>
+                    </div>
                 </div>
                 <div class="intrest-col">
                     <img  class="intrest-img" src="images/competative.jpg" alt="Competative-Programming">
@@ -79,10 +82,11 @@
                     <img  class="intrest-img" src="images/computer-networking.jpg" alt="web-dev">
                 </div>
             </div>
-            <hr class="hr">
+            <hr class="hr"> -->
                             <!-- Eduction -->
-                            <div class="education" id="education">
-                                <div class="heading one"><span>education</span></div>
+                            <div class="main" id="education">
+                                <div class="section-div"><h1 class="section-heading">Education</h1></div>
+                            <div id="education-row">
                                 <div class="education-col">
                                     <img src="images/nit-logo.jpg" alt="nit-logo" class="edu-img">
                                     <h1 class="edu-name">National Institute of Technology Andhra Pradesh</h1>
@@ -96,10 +100,75 @@
                                     <h1 class="edu-name">Sasi Junior College <br>Velivennu</h1>
                                 </div>
                             </div>
+                        </div>
+                            <hr class="hr">
+                            <!-- Experience -->
+                                <div class="main" id="Experience">
+                                <div class="section-div"><h1 class="section-heading">Experience</h1></div>
+                                    <div id="Experience-row">
+                                        <div class="experience-col">
+                                                <img src="images/bharat_intern.jpeg" alt="bharat_intern logo" class="experience-img">
+                                                <div class="experience-info">
+                                                    <p class="property">Role</p><p class="value">Web Developer</p>
+                                                    <p class="property">Position</p><p class="value">Intern</p>
+                                                    <p class="property">Duration</p><p class="value">1 month</p>
+                                                </div>
+                                        </div>
+                                        <div class="experience-col">
+                                            <img src="images/inter.jpg" alt="internpe logo" class="experience-img">
+                                            <div class="experience-info">
+                                                <p class="property">Role</p><p class="value">Web Developer</p>
+                                                <p class="property">Position</p><p class="value">Intern</p>
+                                                <p class="property">Duration</p><p class="value">1 month</p>
+                                            </div>
+                                        </div>
+                                        <div class="experience-col">
+                                            <img src="images/octanet.png" alt="bharat_intern logo" class="experience-img">
+                                            <div class="experience-info">
+                                                <p class="property">Role</p><p class="value">Web Developer</p>
+                                                <p class="property">Position</p><p class="value">Intern</p>
+                                                <p class="property">Duration</p><p class="value">1 month</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            
+                                
+                            
+                            <hr class="hr">
+                            <!-- Certificates -->
+                            <div class="main" id="Certificates">
+                                <div class="section-div"><h1 class="section-heading">Certificates</h1></div>
+                                <div id="Certificates-row">
+                                    <div class="certificates-col">
+                                        <a href="https://www.udemy.com/certificate/UC-62ae3f4f-6048-4d95-a275-d03b1b101f04/" target="_blank" class="certificate-a"><img src="images/Udemy-logo.png" alt="Udemy-logo" class="certificate-img">
+                                        <div class="certificate-about"><i class="fa-solid fa-info certificate-icon" ></i>About</div></a>
+                                        <p class="certificate-para">Java</p>
+                                    </div>
+                                    <div class="certificates-col">
+                                        <a href="https://www.freecodecamp.org/certification/fcc56467b81-0aa1-4a76-b0a1-b605bcd736b8/responsive-web-design" target="_blank" class="certificate-a"><img src="images/FreeCodeCamp_logo.png" alt="Freecodecamp-logo" class="certificate-img">
+                                        <div class="certificate-about"><i class="fa-solid fa-info certificate-icon" ></i>About</div></a>
+                                        <p class="certificate-para">Responsive Web Design</p>
+                                        
+                                    </div>
+                                    <div class="certificates-col">
+                                        <a href="https://www.hackerrank.com/certificates/2aa8d1be83fc" target="_blank" class="certificate-a"><img src="images/HackerRank.png" class="certificate-img"alt="">
+                                        <div class="certificate-about"><i class="fa-solid fa-info certificate-icon" ></i>About</div></a>
+                                        <p class="certificate-para">CSS</p>
+                                    </div>
+                                    <div class="certificates-col">
+                                        <a href="https://www.hackerrank.com/certificates/2aa8d1be83fc" target="_blank" class="certificate-a"><img src="images/HackerRank.png" class="certificate-img"alt="">
+                                        <div class="certificate-about"><i class="fa-solid fa-info certificate-icon" ></i>About</div></a>
+                                        <p class="certificate-para">SQL(Basic)</p>
+                                    </div>
+                                </div>
+                            </div>
                             <hr class="hr">
                                 <!-- skills -->
-            <div class="skills" id="skills">
-                <div class="heading two"><span>Skills</span></div>
+            <div class="main" id="skills">
+                <div class="section-div"><h1 class="section-heading">Skills</h1></div>
+            <div class="skills-r">
                 <div class="skills-row">
                     <i class="fa-brands fa-html5 skill-icon" style="color: #e83b3b;"></i>
                     HTML
@@ -133,7 +202,13 @@
                     BOOTSTRAP
                 </div>
             </div>
+            </div>
             <hr class="hr">
+            <!-- Resume container -->
+            <div class="resume" id="resume">
+                <embed src="documents/resume.pdf" type="application/pdf" class="pdf"></embed>
+            </div>
         </div>
+
 </body>
 </html>

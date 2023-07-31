@@ -14,18 +14,18 @@ $(".close").click(function(){
 });
 
 
-$(".intrest-col").mouseenter(
-    function(){
-        $(".intrest-name").css({"display":"block"}).animate({left:'200px'});
-    }
-);
-$(".intrest-col").mouseleave(
-    function(){
-        $(".intrest-name").animate({left:'20px'}).delay(100).css({"display":"none"});
-    }
-);
-$("body").mouseenter(
-    function(){
+// $(".intrest-col").mouseenter(
+//     function(){
+//         $(".intrest-name").css({"display":"block"}).animate({left:'200px'});
+//     }
+// );
+// $(".intrest-col").mouseleave(
+//     function(){
+//         $(".intrest-name").animate({left:'20px'}).delay(100).css({"display":"none"});
+//     }
+// );
+// $("body").mouseenter(
+//     function(){
         
-    }
-);
+//     }
+// );
